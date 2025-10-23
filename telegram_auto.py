@@ -9,13 +9,18 @@ API_HASH = "8a042086b7d56600e9dd38b1f7952d5d"  # from https://my.telegram.org
 
 # === Customize ===
 AUTO_REPLY_TEXT = (
-    "Hi 👋\n\nThanks for your message! "
-    "I'm currently away and will reply soon."
+    AUTO_REPLY_TEXT = (
+    "Здравствуйте 👋\n\n"
+    "Спасибо за ваше сообщение!\n"
+    "Сейчас я недоступен — не работаю после 17:00 и до 08:00.\n"
+    "Отвечу вам, как только буду онлайн в рабочие часы.\n\n"
+    "Хорошего дня!"
 )
+
 
 # Off-hours logic (Warsaw time)
 TIMEZONE = pytz.timezone("Europe/Warsaw")
-START_HOUR = 17  # reply only from 12:00 ...
+START_HOUR = 12  # reply only from 12:00 ...
 END_HOUR = 8     # ... until 08:00 next day
 
 client = TelegramClient("session_name", API_ID, API_HASH)
