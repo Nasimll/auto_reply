@@ -1,1 +1,1 @@
-web: python auto_reply.py
+web: python  telegram_auto.py
