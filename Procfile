@@ -1,1 +1,1 @@
-web: python  telegram_auto.py
+web: python telegram_auto.py
